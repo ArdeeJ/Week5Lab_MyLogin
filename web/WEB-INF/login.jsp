@@ -12,9 +12,12 @@
         <title>Login</title>
     </head>
     <body>
-        <h1>Login</h1>
-        Username: <input type="text">
-        Password: <input type="password">
-        <input type="submit" value="Log in"
+        <h1>Login</h1><br>
+        <form action="login" method="post">
+            Username: <input type="text" name="username" value="${username}"><br>
+            Password: <input type="password" name="password" value="${password}"><br>
+            <input type="submit" value="Log in">
+        </form>
+            <p>${message}</p>
     </body>
 </html>
